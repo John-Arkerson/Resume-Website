@@ -1,18 +1,22 @@
-'use client'
-import {Card} from "@heroui/card";
+"use client";
+import { Card } from "@heroui/card";
 import { useEffect } from "react";
-import { Image } from "@heroui/image"
+import { Image } from "@heroui/image";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 export default function HomeCard() {
   useEffect(() => {
-        AOS.init();
-      }, [])
+    AOS.init();
+  }, []);
 
   return (
     <div className="max-w-[1400px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
-      <Card data-aos="flip-left" data-aos-duration='1500' className="w-full h-full col-span-12 sm:col-span-7">
+      <Card
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        className="w-full h-full col-span-12 sm:col-span-7"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -20,7 +24,11 @@ export default function HomeCard() {
           src="/photos/all_hands.jpg"
         />
       </Card>
-      <Card data-aos="flip-right" data-aos-duration='1500' className="col-span-12 sm:col-span-4 h-full">
+      <Card
+        data-aos="flip-right"
+        data-aos-duration="1500"
+        className="col-span-12 sm:col-span-4 h-full"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -28,7 +36,11 @@ export default function HomeCard() {
           src="/photos/pompii.jpg"
         />
       </Card>
-      <Card data-aos="flip-left" data-aos-duration='1500' className="col-span-12 sm:col-span-4 h-full">
+      <Card
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        className="col-span-12 sm:col-span-4 h-full"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -36,7 +48,11 @@ export default function HomeCard() {
           src="/photos/chateau.jpg"
         />
       </Card>
-      <Card data-aos="flip-right" data-aos-duration='1500' className="w-full h-full col-span-12 sm:col-span-7">
+      <Card
+        data-aos="flip-right"
+        data-aos-duration="1500"
+        className="w-full h-full col-span-12 sm:col-span-7"
+      >
         <Image
           removeWrapper
           alt="Card example background"
@@ -44,7 +60,11 @@ export default function HomeCard() {
           src="/photos/cliff.jpg"
         />
       </Card>
-      <Card data-aos="flip-left" data-aos-duration='1500' className="w-full h-full col-span-12 sm:col-span-7">
+      <Card
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        className="w-full h-full col-span-12 sm:col-span-7"
+      >
         <Image
           removeWrapper
           alt="Relaxing app background"
@@ -52,7 +72,11 @@ export default function HomeCard() {
           src="/photos/coliseum.jpg"
         />
       </Card>
-      <Card data-aos="flip-right" data-aos-duration='1500' className="col-span-12 sm:col-span-4 h-full">
+      <Card
+        data-aos="flip-right"
+        data-aos-duration="1500"
+        className="col-span-12 sm:col-span-4 h-full"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -60,7 +84,11 @@ export default function HomeCard() {
           src="/photos/sunset.jpg"
         />
       </Card>
-      <Card data-aos="flip-left" data-aos-duration='1500' className="col-span-12 sm:col-span-4 h-full">
+      <Card
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        className="col-span-12 sm:col-span-4 h-full"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -68,7 +96,11 @@ export default function HomeCard() {
           src="/photos/island.jpg"
         />
       </Card>
-      <Card data-aos="flip-right" data-aos-duration='1500' className="w-full h-full col-span-12 sm:col-span-7">
+      <Card
+        data-aos="flip-right"
+        data-aos-duration="1500"
+        className="w-full h-full col-span-12 sm:col-span-7"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -76,7 +108,11 @@ export default function HomeCard() {
           src="/photos/flag.jpg"
         />
       </Card>
-      <Card data-aos="flip-left" data-aos-duration='1500' className="w-full h-full col-span-12 sm:col-span-7">
+      <Card
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        className="w-full h-full col-span-12 sm:col-span-7"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -84,7 +120,12 @@ export default function HomeCard() {
           src="/photos/garden.jpg"
         />
       </Card>
-      <Card data-aos="flip-right" data-aos-duration='1500' isFooterBlurred className="col-span-12 sm:col-span-4 h-full">
+      <Card
+        data-aos="flip-right"
+        data-aos-duration="1500"
+        isFooterBlurred
+        className="col-span-12 sm:col-span-4 h-full"
+      >
         <Image
           removeWrapper
           alt="Card example background"
@@ -92,7 +133,12 @@ export default function HomeCard() {
           src="/photos/grass.jpg"
         />
       </Card>
-      <Card data-aos="flip-left" data-aos-duration='1500' isFooterBlurred className="col-span-12 sm:col-span-4 h-full">
+      <Card
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        isFooterBlurred
+        className="col-span-12 sm:col-span-4 h-full"
+      >
         <Image
           removeWrapper
           alt="Card example background"
@@ -100,7 +146,12 @@ export default function HomeCard() {
           src="/photos/spanish_castle.jpg"
         />
       </Card>
-      <Card data-aos="flip-right" data-aos-duration='1500' isFooterBlurred className="w-full h-full col-span-12 sm:col-span-7">
+      <Card
+        data-aos="flip-right"
+        data-aos-duration="1500"
+        isFooterBlurred
+        className="w-full h-full col-span-12 sm:col-span-7"
+      >
         <Image
           removeWrapper
           alt="Relaxing app background"
@@ -108,7 +159,11 @@ export default function HomeCard() {
           src="/photos/one_way.jpg"
         />
       </Card>
-      <Card data-aos="flip-left" data-aos-duration='1500' className="w-full h-full col-span-12 sm:col-span-7">
+      <Card
+        data-aos="flip-left"
+        data-aos-duration="1500"
+        className="w-full h-full col-span-12 sm:col-span-7"
+      >
         <Image
           removeWrapper
           alt="Card background"
@@ -116,7 +171,11 @@ export default function HomeCard() {
           src="/photos/dove.jpg"
         />
       </Card>
-      <Card data-aos="flip-right" data-aos-duration='1500' className="col-span-12 sm:col-span-4 h-full">
+      <Card
+        data-aos="flip-right"
+        data-aos-duration="1500"
+        className="col-span-12 sm:col-span-4 h-full"
+      >
         <Image
           removeWrapper
           alt="Card background"

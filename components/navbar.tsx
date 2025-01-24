@@ -16,17 +16,23 @@ import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  GithubIcon,
-  DiscordIcon,
-} from "@/components/icons";
+import { GithubIcon, DiscordIcon } from "@/components/icons";
 import React from "react";
 
 export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false)
+  const [isMenuOpen, setIsMenuOpen] = React.useReducer(
+    (current) => !current,
+    false
+  );
 
   return (
-    <NextUINavbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} maxWidth="xl" position="sticky" shouldHideOnScroll>
+    <NextUINavbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      maxWidth="xl"
+      position="sticky"
+      shouldHideOnScroll
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -36,7 +42,7 @@ export const Navbar = () => {
               priority={true}
               width={40}
               height={0}
-              style={{width: "100%", height: "auto"}}
+              style={{ width: "100%", height: "auto" }}
             />
           </NextLink>
         </NavbarBrand>
@@ -46,7 +52,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
                 color="foreground"
                 href={item.href}
@@ -89,11 +95,7 @@ export const Navbar = () => {
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                color={
-                  index === 0
-                    ? "primary"
-                    : "secondary"
-                }
+                color={index === 0 ? "primary" : "secondary"}
                 onPress={() => setIsMenuOpen()}
                 href={item.href}
                 size="lg"

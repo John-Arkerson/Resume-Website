@@ -5,9 +5,7 @@ export default function DocsLayout({
 }) {
   return (
     <section className="lg:h-[calc(100vh-74px)] flex items-top justify-center dark:bg-[url(../public/black_polygons.jpg)] bg-[url(../public/white_polygons.jpg)] bg-cover">
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </section>
   );
 }
