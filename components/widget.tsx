@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Image } from "@heroui/image";
-import { infoConfig } from "@/config/info";
 import {
   Modal,
   ModalContent,
@@ -14,8 +13,10 @@ import {
 } from "@heroui/modal";
 import { Button } from "@heroui/button";
 import { useState } from "react";
-import styles from "../styles/skills.module.css";
 import { useTheme } from "next-themes";
+
+import { infoConfig } from "@/config/info";
+import styles from "../styles/skills.module.css";
 
 export const WidgetList = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -35,7 +36,6 @@ export const WidgetList = () => {
     image: URL;
   }) => {
     setModalData(item);
-    console.log(modalData);
     onOpen();
   };
 
@@ -46,15 +46,15 @@ export const WidgetList = () => {
           data-aos="flip-right"
           data-aos-duration={item.duration}
           className={`dark:bg-default-100 dark:border-gray-700 col-span-2 ${styles.card_wrap}`}
-          onClick={() => handleOpenModal(item)}
           key={item.key}
+          onClick={() => handleOpenModal(item)}
         >
           <div className={`p-10 ${styles[item.header_style]}`}>
             <Image
               alt="Album cover"
+              className={`${styles.card_header_image}`}
               height={100}
               width={100}
-              className={`${styles.card_header_image}`}
               key={item.id}
               src={item.image}
               style={{ filter: theme === "light" ? "invert(1)" : "none" }}
@@ -64,7 +64,6 @@ export const WidgetList = () => {
             <h1 className={`dark:text-white ${styles.card_title}`}>
               {item.year}
             </h1>
-            {/* <p className={styles.card_text}>{item.data}</p> */}
             <button className={`${styles[item.button_style]}`}>
               {item.label}
             </button>

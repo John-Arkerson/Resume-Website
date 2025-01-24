@@ -13,9 +13,9 @@ export default function HomeCard() {
   return (
     <div className="max-w-[1400px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
       <Card
+        className="w-full h-full col-span-12 sm:col-span-7"
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="w-full h-full col-span-12 sm:col-span-7"
       >
         <Image
           removeWrapper
@@ -25,9 +25,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="col-span-12 sm:col-span-4 h-full"
         data-aos="flip-right"
         data-aos-duration="1500"
-        className="col-span-12 sm:col-span-4 h-full"
       >
         <Image
           removeWrapper
@@ -37,9 +37,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="col-span-12 sm:col-span-4 h-full"
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="col-span-12 sm:col-span-4 h-full"
       >
         <Image
           removeWrapper
@@ -49,9 +49,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="w-full h-full col-span-12 sm:col-span-7"
         data-aos="flip-right"
         data-aos-duration="1500"
-        className="w-full h-full col-span-12 sm:col-span-7"
       >
         <Image
           removeWrapper
@@ -61,9 +61,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="w-full h-full col-span-12 sm:col-span-7"
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="w-full h-full col-span-12 sm:col-span-7"
       >
         <Image
           removeWrapper
@@ -73,9 +73,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="col-span-12 sm:col-span-4 h-full"
         data-aos="flip-right"
         data-aos-duration="1500"
-        className="col-span-12 sm:col-span-4 h-full"
       >
         <Image
           removeWrapper
@@ -85,9 +85,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="col-span-12 sm:col-span-4 h-full"
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="col-span-12 sm:col-span-4 h-full"
       >
         <Image
           removeWrapper
@@ -97,9 +97,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="w-full h-full col-span-12 sm:col-span-7"
         data-aos="flip-right"
         data-aos-duration="1500"
-        className="w-full h-full col-span-12 sm:col-span-7"
       >
         <Image
           removeWrapper
@@ -109,9 +109,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="w-full h-full col-span-12 sm:col-span-7"
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="w-full h-full col-span-12 sm:col-span-7"
       >
         <Image
           removeWrapper
@@ -121,10 +121,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="col-span-12 sm:col-span-4 h-full"
         data-aos="flip-right"
         data-aos-duration="1500"
-        isFooterBlurred
-        className="col-span-12 sm:col-span-4 h-full"
       >
         <Image
           removeWrapper
@@ -134,10 +133,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="col-span-12 sm:col-span-4 h-full"
         data-aos="flip-left"
         data-aos-duration="1500"
-        isFooterBlurred
-        className="col-span-12 sm:col-span-4 h-full"
       >
         <Image
           removeWrapper
@@ -147,10 +145,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="w-full h-full col-span-12 sm:col-span-7"
         data-aos="flip-right"
         data-aos-duration="1500"
-        isFooterBlurred
-        className="w-full h-full col-span-12 sm:col-span-7"
       >
         <Image
           removeWrapper
@@ -160,9 +157,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="w-full h-full col-span-12 sm:col-span-7"
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="w-full h-full col-span-12 sm:col-span-7"
       >
         <Image
           removeWrapper
@@ -172,9 +169,9 @@ export default function HomeCard() {
         />
       </Card>
       <Card
+        className="col-span-12 sm:col-span-4 h-full"
         data-aos="flip-right"
         data-aos-duration="1500"
-        className="col-span-12 sm:col-span-4 h-full"
       >
         <Image
           removeWrapper

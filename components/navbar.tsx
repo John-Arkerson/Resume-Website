@@ -13,11 +13,11 @@ import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 import Image from "next/image";
+import React from "react";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, DiscordIcon } from "@/components/icons";
-import React from "react";
+import { GithubIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useReducer(
@@ -28,20 +28,20 @@ export const Navbar = () => {
   return (
     <NextUINavbar
       isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
       maxWidth="xl"
       position="sticky"
       shouldHideOnScroll
+      onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Image
-              src="/Website_logo.png"
               alt="Logo"
               priority={true}
-              width={40}
               height={0}
+              width={40}
+              src="/Website_logo.png"
               style={{ width: "100%", height: "auto" }}
             />
           </NextLink>
@@ -52,7 +52,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
                 color="foreground"
                 href={item.href}
@@ -96,9 +96,9 @@ export const Navbar = () => {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color={index === 0 ? "primary" : "secondary"}
-                onPress={() => setIsMenuOpen()}
                 href={item.href}
                 size="lg"
+                onPress={() => setIsMenuOpen()}
               >
                 {item.label}
               </Link>

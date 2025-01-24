@@ -1,9 +1,10 @@
 "use client";
 
-import styles from "../../styles/about.module.css";
 import Image from "next/image";
-import profile from "../../public/profile_photo.jpeg";
 import fileSaver from "file-saver";
+
+import styles from "../../styles/about.module.css";
+import profile from "../../public/profile_photo.jpeg";
 import { infoConfig } from "@/config/info";
 
 export default function AboutPage() {

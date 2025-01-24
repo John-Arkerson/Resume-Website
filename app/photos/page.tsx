@@ -1,5 +1,6 @@
-import HomeCard from "@/components/card";
 import styles from "../../styles/photos.module.css";
+
+import HomeCard from "@/components/card";
 
 export default function PhotosPage() {
   return (
@@ -7,9 +8,9 @@ export default function PhotosPage() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className={`${styles.content}`}>
           <div
+            className={`${styles.title}`}
             data-aos="fade-down"
             data-aos-duration="1000"
-            className={`${styles.title}`}
           >
             Photo Gallery
           </div>

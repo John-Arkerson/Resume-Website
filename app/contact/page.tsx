@@ -3,9 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useState } from "react";
-import styles from "../../styles/form.module.css";
 import React, { FormEvent } from "react";
 import { Alert } from "@heroui/alert";
+
+import styles from "../../styles/form.module.css";
 
 export default function AboutPage() {
   const [Name, setName] = useState("");
@@ -32,6 +33,7 @@ export default function AboutPage() {
       if (Name === "" || Email === "" || Message === "") {
         setDangerMessage("Please fill out all fields");
         setIsDangerVisible(true);
+        
         return false;
       }
       const res = await fetch("/api", {
@@ -78,22 +80,22 @@ export default function AboutPage() {
       <form
         data-aos="zoom-in-down"
         data-aos-duration="1500"
-        onSubmit={onSubmit}
         className={`mt-10 w-full max-w-2x1 flex flex-col gap-7 dark:border-gray-200 border-gray-400  dark:bg-white/20 bg-black/20 ${styles.glassmorphism}`}
+        onSubmit={onSubmit}
       >
         <input
           type="text"
           placeholder="Name"
           className={styles.form_input}
-          onChange={(e) => setName(e.target.value)}
           value={Name}
+          onChange={(e) => setName(e.target.value)}
         />
         <input
           type="email"
           placeholder="Email"
           className={styles.form_input}
-          onChange={(e) => setEmail(e.target.value)}
           value={Email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           value={Message}

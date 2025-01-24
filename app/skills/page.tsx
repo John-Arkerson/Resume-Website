@@ -2,8 +2,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { WidgetList } from "@/components/widget";
+
 import styles from "../../styles/skills.module.css";
+
+import { WidgetList } from "@/components/widget";
 
 export default function AboutPage() {
   useEffect(() => {
