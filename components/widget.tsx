@@ -19,8 +19,12 @@ import { infoConfig } from "@/config/info";
 import styles from "../styles/skills.module.css";
 
 export const WidgetList = () => {
+  interface data {
+    label: string;
+    data: string;
+  }
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  const [modalData, setModalData] = useState({});
+  const [modalData, setModalData] = useState<data>({ label: "", data: ""});
   const { theme } = useTheme();
 
   useEffect(() => {
