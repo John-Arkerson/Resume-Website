@@ -33,7 +33,7 @@ export const WidgetList = () => {
     label: string;
     year: string;
     data: string;
-    image: URL;
+    image: string;
   }) => {
     setModalData(item);
     onOpen();
