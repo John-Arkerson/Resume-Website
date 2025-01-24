@@ -1,0 +1,22 @@
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: left;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #c8c8c8;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+}

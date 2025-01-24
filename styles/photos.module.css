@@ -1,0 +1,10 @@
+.content .title{
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #6010eb;
+  font-weight: bold;
+  text-shadow: 3px 4px 4px rgba(121, 121, 121, 0.8);
+  line-height: 1;
+  margin-left: 30px;
+  opacity: 100;
+}

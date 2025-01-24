@@ -1,0 +1,25 @@
+.title{
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #6010eb;
+    font-weight: bold;
+    text-shadow: 3px 4px 4px rgba(121, 121, 121, 0.8);
+    line-height: 1;
+    margin-left: 30px;
+    opacity: 100;
+}
+.head_text {
+    @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+.glassmorphism {
+    @apply rounded-xl border shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+.desc {
+    @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl text-center;
+}
+.form_textarea {
+    @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm outline-0;
+}  
+.form_input {
+    @apply w-full flex rounded-lg mt-2 p-3 text-sm outline-0;
+}
