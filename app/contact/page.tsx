@@ -80,7 +80,7 @@ export default function AboutPage() {
       <form
         data-aos="zoom-in-down"
         data-aos-duration="1500"
-        className={`mt-10 w-full max-w-2x1 flex flex-col gap-7 dark:border-gray-200 border-gray-400  dark:bg-white/20 bg-black/20 ${styles.glassmorphism}`}
+        className={`mt-10 w-full flex flex-col gap-7 dark:border-gray-200 border-gray-400  dark:bg-white/20 bg-black/20 ${styles.size} ${styles.glassmorphism}`}
         onSubmit={onSubmit}
       >
         <input

@@ -110,7 +110,7 @@ export default function AboutPage() {
                 </li>
                 <button
                   onClick={saveFile}
-                  className="my-2 ml-40 sm:ml-8 px-5 py-1.5 text-sm bg-red-500 rounded-full text-white"
+                  className="my-2 ml-auto mr-auto sm:ml-8 px-5 py-1.5 text-sm bg-red-500 rounded-full text-white"
                 >
                   Download CV
                 </button>

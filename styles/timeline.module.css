@@ -1,16 +1,8 @@
-/* *{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
-} */
-
 .timeline_section{
-  /* background-color: gray; */
   min-height: 100vh;
   padding: 100px 25px;
 }
 .timeline_items{
-  /* background-color: red; */
   max-width: 1000px;
   margin: auto;
   display: flex;
@@ -85,9 +77,6 @@
   line-height: 22px;
   text-align: left;
 }
-/* .timeline_content p:nth-child(even){
-  text-align: left;
-} */
 
 /* Responsive */
 @media(max-width: 767px){
