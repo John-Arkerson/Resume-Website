@@ -48,7 +48,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/John-Arkerson",
+    github: "https://github.com/John-Arkerson/Resume-Website",
     // discord: "https://discord.gg/9b6yyZKmH4",
   },
 };
