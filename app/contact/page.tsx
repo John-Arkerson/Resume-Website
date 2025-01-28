@@ -36,7 +36,7 @@ export default function AboutPage() {
         
         return false;
       }
-      const res = await fetch("/api", {
+      const res = await fetch("/api/send", {
         cache: "no-store",
         method: "POST",
         body: JSON.stringify({
@@ -53,6 +53,9 @@ export default function AboutPage() {
         const data = await res.json();
         setIsSuccessVisible(true);
         return Response.json(data)
+      } else {
+        setDangerMessage("Error: something went wrong");
+        setIsDangerVisible(true)
       }
     } catch (err: any) {
       // alert(err)
