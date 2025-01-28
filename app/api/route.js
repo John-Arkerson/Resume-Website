@@ -11,9 +11,9 @@ export async function POST(req) {
     const message = formData.Message;
 
     resend.emails.send({
-      from: email,
+      from: "EmailNotification@john-arkerson.com",
       to: "arkersonj1@gmail.com",
-      subject: `${name} wants to send you a message`,
+      subject: `${name} wants to send you a message their email is ${email}`,
       html: `<p>${message}</p>`,
     });
 
