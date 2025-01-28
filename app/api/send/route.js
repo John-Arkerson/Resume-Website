@@ -10,22 +10,19 @@ export async function POST(req) {
     const email = formData.Email;
     const message = formData.Message;
 
-    resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "EmailNotification@john-arkerson.org",
       to: "arkersonj1@gmail.com",
       subject: `${name} wants to send you a message their email is ${email}`,
       html: `<p>${message}</p>`,
     });
 
-    return new NextResponse("Post Successful", { status: 200 });
+    if (error) {
+      return NextResponse.json({ error }, { status: 500 });
+    }
+
+    return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json(
-      {
-        error: "Failed to post message",
-      },
-      {
-        status: 500,
-      }
-    );
+    return NextResponse.json({ error }, { status: 500 });
   }
 }

@@ -45,10 +45,15 @@ export default function AboutPage() {
           Message,
         }),
         headers: {
-          "content-type": "application/json",
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${process.env.RESEND_API_KEY}`
         },
       });
-      setIsSuccessVisible(true);
+      if (res.ok) {
+        const data = await res.json();
+        setIsSuccessVisible(true);
+        return Response.json(data)
+      }
     } catch (err: any) {
       // alert(err)
       setDangerMessage(err);
