@@ -6,6 +6,7 @@ import fileSaver from "file-saver";
 import styles from "../../styles/about.module.css";
 import profile from "../../public/profile_photo.jpeg";
 import { infoConfig } from "@/config/info";
+import Link from "next/link";
 
 export default function AboutPage() {
   const saveFile = () => {
@@ -110,7 +111,7 @@ export default function AboutPage() {
                 </li>
                 <button
                   onClick={saveFile}
-                  className="my-2 ml-auto mr-auto sm:ml-8 px-5 py-1.5 text-sm bg-red-500 rounded-full text-white"
+                  className="my-2 ml-24 mr-auto sm:ml-8 px-5 py-1.5 text-sm bg-red-500 rounded-full text-white"
                 >
                   Download CV
                 </button>
@@ -135,8 +136,8 @@ export default function AboutPage() {
                   {infoConfig.aboutInfo.Volunteer.year}
                 </div>
                 <div className={styles.info}>
-                  <p className={`dark:text-white ${styles.semi_bold}`}>
-                    {infoConfig.aboutInfo.Volunteer.title}
+                  <p className={`dark:text-blue-300 pb-2 underline ${styles.semi_bold}`}>
+                    <Link href="https://www.allhandsandhearts.org/">All Hands and Hearts</Link>
                   </p>
                   <p className="dark:text-white">
                     {infoConfig.aboutInfo.Volunteer.desc}
@@ -155,8 +156,8 @@ export default function AboutPage() {
                   {infoConfig.aboutInfo.Education.year}
                 </div>
                 <div className={styles.info}>
-                  <p className={`dark:text-white ${styles.semi_bold}`}>
-                    {infoConfig.aboutInfo.Education.title}
+                  <p className={`dark:text-blue-300 pb-2 underline ${styles.semi_bold}`}>
+                    <Link href="https://csm.rowan.edu/departments/cs/programs/ba_ci/">Computer and Informattics</Link>
                   </p>
                   <p className="dark:text-white">
                     {infoConfig.aboutInfo.Education.desc}

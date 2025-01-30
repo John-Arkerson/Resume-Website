@@ -47,3 +47,20 @@
         @apply mt-5 text-sm text-gray-600 sm:text-xl max-w-2xl text-center;
     }
 }
+
+@media only screen and (min-width: 900px) {
+    .title{
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #6010eb;
+        font-weight: bold;
+        line-height: 1;
+        margin-top: 50px;
+        margin-left: 15px;
+        opacity: 0;
+        animation: animate 1s ease-in-out 0.3s 1 forwards;
+    }
+    .desc {
+        @apply mt-5 text-sm text-gray-600 sm:text-xl max-w-2xl text-center;
+    }
+}

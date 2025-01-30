@@ -34,7 +34,8 @@ export default function Home() {
           I am a Full-Stack Developer based in the North East!
           <br />
           Although I am an avid Rock climber, I am a programmer at heart.
-          <br />I love solving problems both on the wall as well as in
+          <br />
+          I love solving problems both on the wall as well as in
           development.
         </div>
       </section>
@@ -79,7 +80,7 @@ export default function Home() {
                 <br />
                 <br />
                 Developed dispatch screens for production floor to visualize SPC
-                charts for operator use in the Factory
+                (Statistical Process Control) charts for operator use in the factory
                 <br />
                 <br />
                 Developed internal production React website to generate
@@ -208,14 +209,14 @@ export default function Home() {
                 directories and facilities
                 <br />
                 <br />
-                Designed the front page of the II-VI IT department website
+                Designed the front page of the Coherent IT department website
                 <br />
                 <br />
                 Worked on the facility server and network system configurations
-                at the sister II-VI site in Easton, PA
+                at the sister site in Easton, PA
                 <br />
                 <br />
-                Debugged and rewired network servers in the Warren facility
+                Debugged and rewired network servers in the Warren, NJ facility
                 <br />
                 <br />
                 Developed Warren facility office space floor plan to reconfigure

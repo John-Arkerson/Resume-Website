@@ -14,6 +14,13 @@ export default function PhotosPage() {
           >
             Photo Gallery
           </div>
+          <p
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            className={`dark:text-white text-gray-600 mt-5 text-lg sm:text-xl max-w-2xl text-center`}
+          >
+            Photographs from an amateur photographer
+          </p>
         </div>
         <div className="text-center justify-center lg:ml-16">
           <HomeCard />

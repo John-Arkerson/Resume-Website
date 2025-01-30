@@ -69,7 +69,7 @@ export default function AboutPage() {
   };
 
   return (
-    <section className="w-full max-w-full flex-start flex-col">
+    <section className="w-full max-w-full flex-start flex-col md:mt-24">
       <h2
         data-aos="zoom-in-down"
         data-aos-duration="1500"
