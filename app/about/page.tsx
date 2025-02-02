@@ -4,7 +4,7 @@ import Image from "next/image";
 import fileSaver from "file-saver";
 
 import styles from "../../styles/about.module.css";
-import profile from "../../public/profile_photo.jpeg";
+import profile from "../../public/profile_photo_2.jpeg";
 import { infoConfig } from "@/config/info";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ export default function AboutPage() {
   const saveFile = () => {
     try {
       fileSaver.saveAs(
-        "/2024_John_Arkerson_resume.pdf",
+        "/2025_John_Arkerson_resume.pdf",
         "2025_John Arkerson Resume"
       );
     } catch (error) {
@@ -51,7 +51,7 @@ export default function AboutPage() {
                   <div className={styles.data}>arkersonj1@gmail.com</div>
                 </li>
                 <li>
-                  <div className={styles.data}>www.John-Arkerson.com</div>
+                  <div className={styles.data}>www.John-Arkerson.org</div>
                 </li>
               </ul>
             </div>
@@ -111,9 +111,9 @@ export default function AboutPage() {
                 </li>
                 <button
                   onClick={saveFile}
-                  className="my-2 ml-24 mr-auto sm:ml-8 px-5 py-1.5 text-sm bg-red-500 rounded-full text-white"
+                  className="my-2 ml-20 mr-auto sm:ml-8 px-5 py-1.5 text-sm bg-red-500 rounded-full text-white"
                 >
-                  Download CV
+                  Download Resume
                 </button>
               </ul>
             </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 </div>
                 <div className={styles.info}>
                   <p className={`dark:text-blue-300 pb-2 underline ${styles.semi_bold}`}>
-                    <Link href="https://www.allhandsandhearts.org/">All Hands and Hearts</Link>
+                    <a href="https://www.allhandsandhearts.org/" target="_blank">All Hands and Hearts</a>
                   </p>
                   <p className="dark:text-white">
                     {infoConfig.aboutInfo.Volunteer.desc}
@@ -157,7 +157,7 @@ export default function AboutPage() {
                 </div>
                 <div className={styles.info}>
                   <p className={`dark:text-blue-300 pb-2 underline ${styles.semi_bold}`}>
-                    <Link href="https://csm.rowan.edu/departments/cs/programs/ba_ci/">Computer and Informattics</Link>
+                    <a href="https://csm.rowan.edu/departments/cs/programs/ba_ci/" target="_blank">Computer and Informattics</a>
                   </p>
                   <p className="dark:text-white">
                     {infoConfig.aboutInfo.Education.desc}

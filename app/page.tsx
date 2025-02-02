@@ -72,7 +72,7 @@ export default function Home() {
                 <br />
                 <br />
                 Developed python programs to automate upload of tool measurement
-                data to SQL Server database for employee use across site
+                data to SQL server database for employee use across site
                 locations
                 <br />
                 <br />
