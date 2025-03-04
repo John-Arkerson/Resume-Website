@@ -59,7 +59,7 @@ export default function Home() {
               data-aos-anchor-placement="top-center"
               className={styles.timeline_date}
             >
-              July 2022 - May 2024
+              2022 - 2024
             </div>
             <div
               className={`dark:bg-slate-800 bg-slate-600 ${styles.timeline_content}`}
@@ -101,7 +101,7 @@ export default function Home() {
               data-aos-duration="1000"
               className={styles.timeline_date}
             >
-              March 2022 - July 2022
+              2022 - 2022
             </div>
             <div
               className={`dark:bg-slate-800 bg-slate-600 ${styles.timeline_content}`}
@@ -128,7 +128,7 @@ export default function Home() {
               data-aos-duration="1000"
               className={styles.timeline_date}
             >
-              December 2021 - March 2022
+              2021 - 2022
             </div>
             <div
               className={`dark:bg-slate-800 bg-slate-600 ${styles.timeline_content}`}
@@ -148,12 +148,12 @@ export default function Home() {
               data-aos-duration="1000"
               className={styles.timeline_date}
             >
-              Summer - 2019
+              2019
             </div>
             <div
               className={`dark:bg-slate-800 bg-slate-600 ${styles.timeline_content}`}
             >
-              <h2>New Jersey City University - Research Assistant</h2>
+              <h2>Dr. Shea/Dr. Garcia - Research Assistant</h2>
               <p>
                 Created python script to reformat transcripts and clean data
               </p>
